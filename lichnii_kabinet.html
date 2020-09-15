@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="loaded" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=yes">
+    <title>New-project</title>
+
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
+    <link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script>
+        (function($) {
+            $(function() {
+                $('input, select').styler({
+                    selectSearch: true,
+                });
+            });
+        })(jQuery);
+    </script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<main>
+    <div class="background_modal"></div>
+    <div class="btn_fone"></div>
+    <div class="modalka">
+        <div class="modal-close-btn">
+            <img src="img/close.png" alt="">
+        </div>
+        <h1 class="modal_zagolovok">
+            Изменить пароль
+        </h1>
+        <form action="" class="modal_form">
+            <label for="">
+                Текущей пароль <span class="false_password">Неверный пароль</span> <br>
+                <input class="password_form_false" type="password">
+            </label>
+            <label class="new_password" for="">
+                Новый пароль<br>
+                <input class="password_form" type="password"> <span class="cool"><img src="img/cool.png" alt=""></span>
+            </label>
+            <label class="new_password" for="">
+                Повторите новый пароль<br>
+                <input class="password_form" type="password">
+            </label>
+            <button class="save">Сохранить</button>
+            <button disabled class="otmena">Отменить</button>
+        </form>
+    </div>
+    <header>
+        <div class="hed">
+            <div class="container">
+                <div class="row">
+                    <div class="col xs-8">
+                        <div class="wrap_header">
+                            <h1 class="zagolovok">Личный кабинет</h1>
+                            <p class="header_text">Симуляционный центр при медецинской академии им. С.Р.Иванова,г. Секешвехервар</p>
+                        </div>
+                    </div>
+                    <div class="col xs-1">
+                        <img class="zvonok" src="img/zvonok.png" alt="zvonok">
+                    </div>
+                    <div class="col xs-3">
+                        <div class="wrap_user">
+                            <button class="user">
+                                <p class="user_name">Эдгар Берлифитцингович</p>
+                                <img class="down" src="img/down.png" alt="">
+                            </button>
+                            <div class="down_panel">
+                                <div class="img_panel">
+                                    <img class="shesterni" src="img/shesterni.png" alt="">
+                                    <img class="vopros" src="img/vopros.png" alt="">
+                                    <img class="exit" src="img/exit.png" alt="">
+                                </div>
+                                <ul class="spisok_panel">
+                                    <li class="links_panel"><button id="settings" class="knopka_panel">Настройка учетной записи</button></li>
+                                    <li class="links_panel"><button class="knopka_panel">Центр поддержки</button></li>
+                                    <li class="links_panel"><button class="knopka_panel_exit">Выйти</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col xs-12">
+                    <div class="menu">
+                        <ul class="menu_spisok">
+                            <li class="links_activ"><a href="lichnii_kabinet.html">Тренажеры и уроки</a></li>
+                            <li class="menu_links"><a href="">Поддержка</a></li>
+                            <li class="menu_links"><a href="index.html">Вопросы и ответы</a></li>
+                            <li class="menu_links"><a href="obrashenia.html">Обращения</a></li>
+                            <li class="menu_links"><a href="">Учетные данные</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col xs-12">
+                    <h1 class="zagolovki_lk">Список Теле-Менторов</h1>
+                    <div class="wrap_sp">
+                        <div class="head_sp">
+                            <div class="row">
+                                <div class="col xs-4"><p class="head_left">Телементор</p></div>
+                                <div class="col xs-4"><p class="head_center">Текущая версия ПО</p></div>
+                                <div class="col xs-4"><p class="head_right">Доступная версия ПО</p></div>
+                            </div>
+                        </div>
+                        <ul class="sp_link">
+                            <li class="sp_links">
+                                <div class="row">
+                                    <div class="col xs-4"><p class="punkt_left">T-016</p></div>
+                                    <div class="col xs-4"><p class="punkt_center">1.1</p></div>
+                                    <div class="col xs-4"><p class="punkt_right">2.1</p><button class="btn_right">Обновить</button></div>
+                                </div>
+                            </li>
+                            <li class="sp_links">
+                                <div class="row">
+                                    <div class="col xs-4"><p class="punkt_left">T-021</p></div>
+                                    <div class="col xs-4"><p class="punkt_center">2.1</p></div>
+                                    <div class="col xs-4"><p class="punkt_right">2.2</p><button class="btn_right">Обновить</button></div>
+                                </div>
+                            </li>
+                            <li class="sp_links">
+                                <div class="row">
+                                    <div class="col xs-4"><p class="punkt_left">T-054</p></div>
+                                    <div class="col xs-4"><p class="punkt_center">2.1</p></div>
+                                    <div class="col xs-4"><p class="punkt_right">2.1</p><button disabled class="btn_pass">Обновить</button></div>
+                                </div>
+                            </li>
+                            <li class="sp_links">
+                                <div class="row">
+                                    <div class="col xs-4"><p class="punkt_left">T-016</p></div>
+                                    <div class="col xs-4"><p class="punkt_center">1.1</p></div>
+                                    <div class="col xs-4"><p class="punkt_right">2.1</p><button class="btn_right">Обновить</button></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1 class="zagolovki_lk2">Уроки для телементора Т-016</h1>
+                    <div class="wrap_sp2">
+                        <div class="head_sp">
+                            <div class="row">
+                                <div class="col xs-4">
+                                    <input id="checkAll" class="uroki" type="checkbox"><span class="spn-uroki">Уроки</span>
+                                </div>
+                                <div class="col xs-4"><p class="head_center">Текущая версия</p></div>
+                                <div class="col xs-4"><p class="head_right">Доступная версия</p></div>
+                            </div>
+                        </div>
+                        <ul class="sp_link2">
+                            <li class="sp_links2">
+                                <div class="row">
+                                    <div class="col xs-4">
+                                            <input id="checkboxic" class="checkbox" type="checkbox" name="checkbox-test"><span><img class="chec1" src="img/chec1.png" alt=""><p class="label_text">Очистительная клизма</p></span>
+                                    </div>
+                                    <div class="col xs-4"><p class="punkt_center">1.1</p></div>
+                                    <div class="col xs-4"><p class="punkt_right">2.1</p><button class="btn_right">Обновить</button></div>
+                                </div>
+                            </li>
+                            <li class="sp_links2">
+                                <div class="row">
+                                    <div class="col xs-4">
+                                            <input id="checkboxic" class="checkbox" type="checkbox" name="checkbox-test"><span><img class="chec1" src="img/chec2.png" alt=""><p class="label_text">Очистительная клизма</p></span>
+                                    </div>
+                                    <div class="col xs-4"><p class="punkt_center">2.1</p></div>
+                                    <div class="col xs-4"><p class="punkt_right">2.2</p><button class="btn_right">Обновить</button></div>
+                                </div>
+                            </li>
+                            <li class="sp_links2">
+                                <div class="row">
+                                    <div class="col xs-4">
+                                            <input id="checkboxic" class="checkbox" type="checkbox" name="checkbox-test"><span><img class="chec1" src="img/chec3.png" alt=""><p class="label_text">Внутривенная инъекция</p></span>
+                                    </div>
+                                    <div class="col xs-4"><p class="punkt_center">2.1</p></div>
+                                    <div class="col xs-4"><p class="punkt_right">2.1</p><button disabled class="btn_pass">Обновить</button></div>
+                                </div>
+                            </li>
+                            <li class="sp_links2">
+                                <div class="row">
+                                    <div class="col xs-4">
+                                            <input id="checkboxic" class="checkbox" type="checkbox" name="checkbox-test"><span><img class="chec1" src="img/chec4.png" alt=""><p class="label_text">Подкожная инъекция</p></span>
+                                    </div>
+                                    <div class="col xs-4"><p class="punkt_center">2.1</p></div>
+                                    <div class="col xs-4"><p class="punkt_right">2.2</p><button class="btn_right">Обновить</button></div>
+                                </div>
+                            </li>
+                            <li class="sp_links2">
+                                <div class="row">
+                                    <div class="col xs-4">
+                                        <input id="checkboxic" class="checkbox" type="checkbox" name="checkbox-test"><span><img class="chec1" src="img/chec1.png" alt=""><p class="label_text">Очистительная клизма</p></span>
+                                    </div>
+                                    <div class="col xs-4"><p class="punkt_center">1.1</p></div>
+                                    <div class="col xs-4"><p class="punkt_right">2.1</p><button class="btn_right">Обновить</button></div>
+                                </div>
+                            </li>
+                            <li class="sp_links2">
+                                <div class="row">
+                                    <div class="col xs-4">
+                                        <input id="checkboxic" class="checkbox" type="checkbox" name="checkbox-test"><span><img class="chec1" src="img/chec2.png" alt=""><p class="label_text">Очистительная клизма</p></span>
+                                    </div>
+                                    <div class="col xs-4"><p class="punkt_center">2.1</p></div>
+                                    <div class="col xs-4"><p class="punkt_right">2.2</p><button class="btn_right">Обновить</button></div>
+                                </div>
+                            </li>
+                            <li class="sp_links2">
+                                <div class="row">
+                                    <div class="col xs-4">
+                                        <input id="checkboxic" class="checkbox" type="checkbox" name="checkbox-test"><span><img class="chec1" src="img/chec3.png" alt=""><p class="label_text">Внутривенная инъекция</p></span>
+                                    </div>
+                                    <div class="col xs-4"><p class="punkt_center">2.1</p></div>
+                                    <div class="col xs-4"><p class="punkt_right">2.1</p><button disabled class="btn_pass">Обновить</button></div>
+                                </div>
+                            </li>
+                            <li class="sp_links2">
+                                <div class="row">
+                                    <div class="col xs-4">
+                                        <input id="checkboxic" class="checkbox" type="checkbox" name="checkbox-test"><span><img class="chec1" src="img/chec4.png" alt=""><p class="label_text">Подкожная инъекция</p></span>
+                                    </div>
+                                    <div class="col xs-4"><p class="punkt_center">2.1</p></div>
+                                    <div class="col xs-4"><p class="punkt_right">2.2</p><button class="btn_right">Обновить</button></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn_all">Обновить выбранные</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script type="text/javascript" src="path/to/zebra_accordion.js"></script>
+<script src="js/scripts.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html class="loaded" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=yes">
+    <title>New-project</title>
+
+
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
+    <link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/pickmeup.css" type="text/css" />
+    <link href="css/style.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script type="text/javascript" src="js/jquery.pickmeup.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+    <script>
+        (function($) {
+            $(function() {
+                $('input, select').styler({
+                    selectSearch: true,
+                });
+            });
+        })(jQuery);
+    </script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<main>
+    <div class="background_modal"></div>
+    <div class="btn_fone"></div>
+    <div class="modalka">
+        <div class="modal-close-btn">
+            <img src="img/close.png" alt="">
+        </div>
+        <h1 class="modal_zagolovok">
+            Изменить пароль
+        </h1>
+        <form action="" class="modal_form">
+            <label for="">
+                Текущей пароль <span class="false_password">Неверный пароль</span> <br>
+                <input class="password_form_false" type="password">
+            </label>
+            <label class="new_password" for="">
+                Новый пароль<br>
+                <input class="password_form" type="password"> <span class="cool"><img src="img/cool.png" alt=""></span>
+            </label>
+            <label class="new_password" for="">
+                Повторите новый пароль<br>
+                <input class="password_form" type="password">
+            </label>
+            <button class="save">Сохранить</button>
+            <button disabled class="otmena">Отменить</button>
+        </form>
+    </div>
+    <header>
+        <div class="hed">
+            <div class="container">
+                <div class="row">
+                    <div class="col xs-8">
+                        <div class="wrap_header">
+                            <h1 class="zagolovok">Обращения</h1>
+                            <p class="header_text">Симуляционный центр при медецинской академии им. С.Р.Иванова,г. Секешвехервар</p>
+                        </div>
+                    </div>
+                    <div class="col xs-1">
+                        <img class="zvonok" src="img/zvonok.png" alt="zvonok">
+                    </div>
+                    <div class="col xs-3">
+                        <div class="wrap_user">
+                            <button class="user">
+                                <p class="user_name">Эдгар Берлифитцингович</p>
+                                <img class="down" src="img/down.png" alt="">
+                            </button>
+                            <div class="down_panel">
+                                <div class="img_panel">
+                                    <img class="shesterni" src="img/shesterni.png" alt="">
+                                    <img class="vopros" src="img/vopros.png" alt="">
+                                    <img class="exit" src="img/exit.png" alt="">
+                                </div>
+                                <ul class="spisok_panel">
+                                    <li class="links_panel"><button id="settings" class="knopka_panel">Настройка учетной записи</button></li>
+                                    <li class="links_panel"><button class="knopka_panel">Центр поддержки</button></li>
+                                    <li class="links_panel"><button class="knopka_panel_exit">Выйти</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col xs-12">
+                    <div class="menu">
+                        <ul class="menu_spisok">
+                            <li class="menu_links"><a href="lichnii_kabinet.html">Тренажеры и уроки</a></li>
+                            <li class="menu_links"><a href="">Поддержка</a></li>
+                            <li class="menu_links"><a href="index.html">Вопросы и ответы</a></li>
+                            <li class="links_activ"><a href="obrashenia.html">Обращения</a></li>
+                            <li class="menu_links"><a href="">Учетные данные</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col xs-12">
+                    <div class="wrap_filtr">
+                        <p class="filtr_text">Фильтровать:</p><span>  <button class="btn_filtr"><img class="circle" src="img/circle_blue.png" alt="">Новое</button>
+                            <button class="btn_filtr"><img class="circle" src="img/circle_yellou.png" alt="">В разработке</button>
+                            <button class="btn_filtr"><img class="circle" src="img/circle_green.png" alt="">Решено</button>
+                            <button class="btn_filtr__activ"><img class="circle" src="img/circle_red.png" alt="">Не решено</button></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col xs-12">
+                    <div class="head_obrashenia">
+                        <div class="col xs-2">
+                            <div class="wrap_btn_date">
+                                <button id="btn_date" class="btn_date">Дата <img class="date_down" src="img/down.png" alt=""></button>
+                                <div class="demo"></div>
+
+                            </div>
+                        </div>
+                        <div class="col xs-2"><p class="telementor">Теле-ментор</p></div>
+                        <div class="col xs-4"><p class="text_obrashenie">Обращение</p></div>
+                        <div class="col xs-4">
+                            <div class="wrap_btn_new">
+                                <button class="btn_new_obrashnia"><b>Создать новое обращение +</b></button>
+                                <div class="modal_new_obrashenia">
+                                    <div class="head_modal_obrashenia">
+                                        <div class="left_vibor">
+                                                <input id="checkbox1" class="vibor" type="checkbox" name="checkbox-test"><span class="label left_zagolovok_obr">Выбрать Теле-ментор</span>
+                                        </div>
+                                        <div class="text_obrashenia_right">
+                                            <p class="zagolovok_obrashenia_right">
+                                                Текст обращения
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="body_modal_obrashenia">
+                                        <div class="modal_left_model">
+                                            <ul class="spisok_modal">
+                                                <li class="modeli_madal">
+                                                        <input id="checkbox1" class="checkbox" type="checkbox" name="checkbox-test"><span class="text_modeli">T-016</span>
+                                                </li>
+                                                <li class="modeli_madal">
+                                                        <input id="checkbox1" class="checkbox" type="checkbox" name="checkbox-test"><span class="text_modeli">T-021</span>
+                                                </li>
+                                                <li class="modeli_madal">
+                                                        <input id="checkbox1" class="checkbox" type="checkbox" name="checkbox-test"><span class="text_modeli">T-054</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal_text_right">
+                                            <p class="modal_obrashenia_right">
+                                                Равным образом сложившаяся структура организации требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый
+                                                 опыт постоянное <br> информационно-пропагандистское обеспечение нашей деятельности
+                                                представляет собой интересный эксперимент проверки дальнейших направлений развития.Товарищи! постоянный количественный рост и сфера нашей активности способсвует подготовки и реализации модели
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="footer_modal">
+                                        <button type="button" class="modal_screpka"><img src="img/screpka.png" alt=""></button>
+                                        <input class="modal_new_text" type="text">
+                                        <button type="submit" class="modal_samolet"><img src="img/samolet.png" alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="body_obrashenia">
+                        <li class="links_obrashenia">
+                            <div class="table_date">
+                                <img class="circle" src="img/circle_red.png" alt=""><span>2017.06.01</span>
+                            </div>
+                            <div class="model">
+                                <span>T-016</span>
+                            </div>
+                            <div class="wraper_accordion">
+                                <dl class="Zebra_Accordion">
+                                    <dt class="obrashenie_zagolovok"><b>Работает верхняя IP камера,а мне нужно чтоб не работала,как отключить?</b></dt>
+                                    <dd class="obrashenie_massage">
+                                        <div class="dialogs">
+                                            <div class="massages">
+                                                <div class="user_foto">
+                                                    <img src="img/foto_admin.png" alt="">
+                                                </div>
+                                                <div class="massage">
+                                                    <p class="massage_name">Администратор
+                                                    </p>
+                                                    <p class="massage_text">Добрый день, Эдгар Берлифитцингович! Для определения и устранения ошибки, нам нужна более точная информация о вашей проблеме.</p>
+                                                </div>
+                                                <div class="massage_date">
+                                                    06.05.2017 <span class="time">11:06</span>
+                                                </div>
+                                            </div>
+                                            <div class="massages_otvet">
+                                               <div class="user_foto">
+                                                   <img src="img/user_foto.png" alt="">
+                                               </div>
+                                               <div class="massage_otvet">
+                                                   <p class="massage_name">
+                                                   </p>
+                                                   <p class="massage_text">Хорошо, я вышлю вам исчерпывающую информацию, с фото
+                                                       <br> и зарисовками в проекции.</p>
+                                               </div>
+                                               <div class="massage_date">
+                                                   06.05.2017 <span class="time">11:09</span>
+                                               </div>
+                                           </div>
+                                            <div class="massages">
+                                               <div class="user_foto">
+                                                   <img src="img/foto_admin.png" alt="">
+                                               </div>
+                                               <div class="massage">
+                                                   <p class="massage_name">Администратор
+                                                   </p>
+                                                   <p class="massage_text">Эдгар Берлифитцингович,давайте без вашего сарказма.</p>
+                                               </div>
+                                               <div class="massage_date">
+                                                   06.05.2017 <span class="time">11:11</span>
+                                               </div>
+                                           </div>
+                                            <div class="massages_otvet">
+                                               <div class="user_foto">
+                                                   <img src="img/user_foto.png" alt="">
+                                               </div>
+                                               <div class="massage_otvet">
+                                                   <p class="massage_name">
+                                                   </p>
+                                                   <p class="massage_text">Пфф...Никакого сарказма, здесь серьезность правит бал!</p>
+                                               </div>
+                                               <div class="massage_date">
+                                                   07.05.2017 <span class="time">15:24</span>
+                                               </div>
+                                           </div>
+                                            <div class="massages">
+                                               <div class="user_foto">
+                                                   <img src="img/foto_admin.png" alt="">
+                                               </div>
+                                               <div class="massage">
+                                                   <p class="massage_name">Администратор
+                                                   </p>
+                                                   <p class="massage_text">Началось бл*...</p>
+                                               </div>
+                                               <div class="massage_date">
+                                                   07.05.2017 <span class="time">15:45</span>
+                                               </div>
+                                           </div>
+                                        </div>
+                                        <div class="new_massege">
+                                            <form action="">
+                                                <button class="screpka" type="button"><img src="img/screpka.png" alt=""></button>
+                                                <input class="new_massege_text" type="text">
+                                                <button class="samolet" type="submit"></button>
+                                            </form>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="links_obrashenia">
+                            <div class="table_date">
+                                <img class="circle" src="img/circle_yellou.png" alt=""><span>2017.05.22</span>
+                            </div>
+                            <div class="model">
+                                <span>Все</span>
+                            </div>
+                            <div class="wraper_accordion">
+                                <dl class="Zebra_Accordion">
+                                    <dt class="obrashenie_zagolovok"><b>Ничего не работает...Практически ничего.Кое-что работает, но криво, все висит, ничего не помогает.Почему?!?!?!</b></dt>
+                                    <dd class="obrashenie_massage">
+                                        <div class="dialogs">
+                                            <div class="massages">
+                                                <div class="user_foto">
+                                                    <img src="img/foto_admin.png" alt="">
+                                                </div>
+                                                <div class="massage">
+                                                    <p class="massage_name">Администратор
+                                                    </p>
+                                                    <p class="massage_text">Добрый день, Эдгар Берлифитцингович! Для определения и устранения ошибки, нам нужна более точная информация о вашей проблеме.</p>
+                                                </div>
+                                                <div class="massage_date">
+                                                    06.05.2017 <span class="time">11:06</span>
+                                                </div>
+                                            </div>
+                                            <div class="massages_otvet">
+                                                <div class="user_foto">
+                                                    <img src="img/user_foto.png" alt="">
+                                                </div>
+                                                <div class="massage_otvet">
+                                                    <p class="massage_name">
+                                                    </p>
+                                                    <p class="massage_text">Хорошо, я вышлю вам исчерпывающую информацию, с фото
+                                                        <br> и зарисовками в проекции.</p>
+                                                </div>
+                                                <div class="massage_date">
+                                                    06.05.2017 <span class="time">11:09</span>
+                                                </div>
+                                            </div>
+                                            <div class="massages">
+                                                <div class="user_foto">
+                                                    <img src="img/foto_admin.png" alt="">
+                                                </div>
+                                                <div class="massage">
+                                                    <p class="massage_name">Администратор
+                                                    </p>
+                                                    <p class="massage_text">Эдгар Берлифитцингович,давайте без вашего сарказма.</p>
+                                                </div>
+                                                <div class="massage_date">
+                                                    06.05.2017 <span class="time">11:11</span>
+                                                </div>
+                                            </div>
+                                            <div class="massages_otvet">
+                                                <div class="user_foto">
+                                                    <img src="img/user_foto.png" alt="">
+                                                </div>
+                                                <div class="massage_otvet">
+                                                    <p class="massage_name">
+                                                    </p>
+                                                    <p class="massage_text">Пфф...Никакого сарказма, здесь серьезность правит бал!</p>
+                                                </div>
+                                                <div class="massage_date">
+                                                    07.05.2017 <span class="time">15:24</span>
+                                                </div>
+                                            </div>
+                                            <div class="massages">
+                                                <div class="user_foto">
+                                                    <img src="img/foto_admin.png" alt="">
+                                                </div>
+                                                <div class="massage">
+                                                    <p class="massage_name">Администратор
+                                                    </p>
+                                                    <p class="massage_text">Началось бл*...</p>
+                                                </div>
+                                                <div class="massage_date">
+                                                    07.05.2017 <span class="time">15:45</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new_massege">
+                                            <form action="">
+                                                <button class="screpka" type="button"><img src="img/screpka.png" alt=""></button>
+                                                <input class="new_massege_text" type="text">
+                                                <button class="samolet" type="submit"><img src="img/samolet.png" alt=""></button>
+                                            </form>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="links_obrashenia">
+                            <div class="table_date">
+                                <img class="circle" src="img/circle_green.png" alt=""><span>2017.03.19</span>
+                            </div>
+                            <div class="model">
+                                <span>T-02</span>
+                            </div>
+                            <div class="wraper_accordion">
+                                <dl class="Zebra_Accordion">
+                                    <dt class="obrashenie_zagolovok"><b>Не отображаются подложки стола.Почему такой бардак?</b></dt>
+                                    <dd class="obrashenie_massage">
+                                        <div class="dialogs">
+                                            <div class="massages">
+                                                <div class="user_foto">
+                                                    <img src="img/foto_admin.png" alt="">
+                                                </div>
+                                                <div class="massage">
+                                                    <p class="massage_name">Администратор
+                                                    </p>
+                                                    <p class="massage_text">Добрый день, Эдгар Берлифитцингович! Для определения и устранения ошибки, нам нужна более точная информация о вашей проблеме.</p>
+                                                </div>
+                                                <div class="massage_date">
+                                                    06.05.2017 <span class="time">11:06</span>
+                                                </div>
+                                            </div>
+                                            <div class="massages_otvet">
+                                                <div class="user_foto">
+                                                    <img src="img/user_foto.png" alt="">
+                                                </div>
+                                                <div class="massage_otvet">
+                                                    <p class="massage_name">
+                                                    </p>
+                                                    <p class="massage_text">Хорошо, я вышлю вам исчерпывающую информацию, с фото
+                                                        <br> и зарисовками в проекции.</p>
+                                                </div>
+                                                <div class="massage_date">
+                                                    06.05.2017 <span class="time">11:09</span>
+                                                </div>
+                                            </div>
+                                            <div class="massages">
+                                                <div class="user_foto">
+                                                    <img src="img/foto_admin.png" alt="">
+                                                </div>
+                                                <div class="massage">
+                                                    <p class="massage_name">Администратор
+                                                    </p>
+                                                    <p class="massage_text">Эдгар Берлифитцингович,давайте без вашего сарказма.</p>
+                                                </div>
+                                                <div class="massage_date">
+                                                    06.05.2017 <span class="time">11:11</span>
+                                                </div>
+                                            </div>
+                                            <div class="massages_otvet">
+                                                <div class="user_foto">
+                                                    <img src="img/user_foto.png" alt="">
+                                                </div>
+                                                <div class="massage_otvet">
+                                                    <p class="massage_name">
+                                                    </p>
+                                                    <p class="massage_text">Пфф...Никакого сарказма, здесь серьезность правит бал!</p>
+                                                </div>
+                                                <div class="massage_date">
+                                                    07.05.2017 <span class="time">15:24</span>
+                                                </div>
+                                            </div>
+                                            <div class="massages">
+                                                <div class="user_foto">
+                                                    <img src="img/foto_admin.png" alt="">
+                                                </div>
+                                                <div class="massage">
+                                                    <p class="massage_name">Администратор
+                                                    </p>
+                                                    <p class="massage_text">Началось бл*...</p>
+                                                </div>
+                                                <div class="massage_date">
+                                                    07.05.2017 <span class="time">15:45</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new_massege">
+                                            <form action="">
+                                                <button class="screpka" type="button"><img src="img/screpka.png" alt=""></button>
+                                                <input class="new_massege_text" type="text">
+                                                <button class="samolet" type="submit"><img src="img/samolet.png" alt=""></button>
+                                            </form>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="js/scripts.min.js"></script>
+<script type="text/javascript" src="js/zebra_accordion.min.js"></script>
+</body>
+</html>

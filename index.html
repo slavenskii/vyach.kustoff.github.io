@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="loaded" lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,user-scalable=yes">
+        <title>New-project</title>
+
+
+        <link href="css/jquery.formstyler.css" rel="stylesheet" />
+        <link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
+        <link href="css/style.min.css" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/jquery.formstyler.min.js"></script>
+        <script>
+            (function($) {
+                $(function() {
+                    $('input, select').styler({
+                        selectSearch: true,
+                    });
+                });
+            })(jQuery);
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+
+    </head> 
+    <body>
+        <main>
+            <div class="background_modal"></div>
+            <div class="btn_fone"></div>
+            <div class="modalka">
+                <div class="modal-close-btn">
+                    <img src="img/close.png" alt="">
+                </div>
+                <h1 class="modal_zagolovok">
+                    Изменить пароль
+                </h1>
+                <form action="" class="modal_form">
+                    <label for="">
+                        Текущей пароль <span class="false_password">Неверный пароль</span> <br>
+                        <input class="password_form_false" type="password">
+                    </label>
+                    <label class="new_password" for="">
+                        Новый пароль<br>
+                        <input class="password_form" type="password"> <span class="cool"><img src="img/cool.png" alt=""></span>
+                    </label>
+                    <label class="new_password" for="">
+                        Повторите новый пароль<br>
+                        <input class="password_form" type="password">
+                    </label>
+                    <button class="save">Сохранить</button>
+                    <button disabled class="otmena">Отменить</button>
+                </form>
+            </div>
+            <header>
+                <div class="hed">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col xs-8">
+                                <div class="wrap_header">
+                                    <h1 class="zagolovok">Вопросы и ответы</h1>
+                                    <p class="header_text">Симуляционный центр при медецинской академии им. С.Р.Иванова,г. Секешвехервар</p>
+                                </div>
+                            </div>
+                            <div class="col xs-1">
+                                <img class="zvonok" src="img/zvonok.png" alt="zvonok">
+                            </div>
+                            <div class="col xs-3">
+                                <div class="wrap_user">
+                                    <button class="user">
+                                        <p class="user_name">Эдгар Берлифитцингович</p>
+                                        <img class="down" src="img/down.png" alt="">
+                                    </button>
+                                    <div class="down_panel">
+                                        <div class="img_panel">
+                                            <img class="shesterni" src="img/shesterni.png" alt="">
+                                            <img class="vopros" src="img/vopros.png" alt="">
+                                            <img class="exit" src="img/exit.png" alt="">
+                                        </div>
+                                        <ul class="spisok_panel">
+                                            <li class="links_panel"><button id="settings" class="knopka_panel">Настройка учетной записи</button></li>
+                                            <li class="links_panel"><button class="knopka_panel">Центр поддержки</button></li>
+                                            <li class="links_panel"><button class="knopka_panel_exit">Выйти</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="container">
+                     <div class="row">
+                         <div class="col xs-12">
+                             <div class="menu">
+                                 <ul class="menu_spisok">
+                                     <li class="menu_links"><a href="lichnii_kabinet.html">Тренажеры и уроки</a></li>
+                                     <li class="menu_links"><a href="">Поддержка</a></li>
+                                     <li class="links_activ"><a href="index.html">Вопросы и ответы</a></li>
+                                     <li class="menu_links"><a href="obrashenia.html">Обращения</a></li>
+                                     <li class="menu_links"><a href="">Учетные данные</a></li>
+                                 </ul>
+                             </div>
+                             <hr>
+                             <form class="search" action="">
+                                 <input class="poisk" type="text" placeholder="Поиск">
+                                 <button class="btn-search"><img class="lupa" src="img/lupa.png" alt=""></button>
+                             </form>
+                         </div>
+                     </div>
+                </div>
+            </header>
+            <section>
+                <div class="wrap_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col xs-12">
+                            <div class="wrap_zebra">
+                                <h1 class="faq">Часто задаваемые вопросы</h1>
+                                <dl class="Zebra_Accordion">
+                                    <dt class="accordion_zagolovok"><b>Установка и обслуживание</b></dt>
+                                    <dd class="accordion_spisok">
+                                        <ul class="accord">
+                                            <li class="links_accord"><span class="links_accordion">Какой пароль и логин у администратора?</span></li>
+                                            <li class="links_accord"><span class="links_accordion">Как преподаватель может проверить выполнение навыка в процессе сдачи?
+                                                <div class="otvet">
+                                                    <p class="otvet_text">Для этого в интерфейсе преподавателя предусмотрен режим "Проверка", в котором он может
+                                                        <br> оценивать выполнение навыка курсанта в режиме онлайн/оффлайн,либо самостоятельно запустить
+                                                        <br> экзамен для курсанта,после чего автоматически появится чек-лист для оценки навыкаю</p>
+                                                    <p class="otvet_text2">Ответ был полезен?<span> <button class="yes">Да</button><button class="no">Нет</button></span></p>
+                                                </div>
+                                            </span></li>
+                                            <li class="links_accord"><span class="links_accordion">Зачем нужен режим самоконтроля</span></li>
+                                            <li class="links_accord"><span class="links_accordion">Как обновлять програмное обеспечение и уроки</span></li>
+                                        </ul>
+                                    </dd>
+                                    <dt class="accordion_zagolovok"><b>Режим работы и самоконтроль</b></dt>
+                                    <dd class="accordion_spisok">
+                                        <ul class="accord">
+                                            <li class="links_accord"><span class="links_accordion">Какой пароль и логин у администратора?</span></li>
+                                            <li class="links_accord"><span class="links_accordion">Как преподаватель может проверить выполнение навыка в процессе сдачи?
+                                                <div class="otvet">
+                                                    <p class="otvet_text">Для этого в интерфейсе преподавателя предусмотрен режим "Проверка", в котором он может
+                                                        <br> оценивать выполнение навыка курсанта в режиме онлайн/оффлайн,либо самостоятельно запустить
+                                                        <br> экзамен для курсанта,после чего автоматически появится чек-лист для оценки навыкаю</p>
+                                                    <p class="otvet_text2">Ответ был полезен?<span> <button class="yes">Да</button><button class="no">Нет</button></span></p>
+                                                </div>
+                                            </span></li>
+                                            <li class="links_accord"><span class="links_accordion">Зачем нужен режим самоконтроля</span></li>
+                                            <li class="links_accord"><span class="links_accordion">Как обновлять програмное обеспечение и уроки</span></li>
+                                        </ul>
+                                    </dd>
+                                    <dt class="accordion_zagolovok"><b>Как преподователь может проверить выполнение навыка в процессе сдачи</b></dt>
+                                    <dd class="accordion_spisok">
+                                        <ul class="accord">
+                                            <li class="links_accord"><span class="links_accordion">Какой пароль и логин у администратора?</span></li>
+                                            <li class="links_accord"><span class="links_accordion">Как преподаватель может проверить выполнение навыка в процессе сдачи?
+                                                <div class="otvet">
+                                                    <p class="otvet_text">Для этого в интерфейсе преподавателя предусмотрен режим "Проверка", в котором он может
+                                                        <br> оценивать выполнение навыка курсанта в режиме онлайн/оффлайн,либо самостоятельно запустить
+                                                        <br> экзамен для курсанта,после чего автоматически появится чек-лист для оценки навыкаю</p>
+                                                    <p class="otvet_text2">Ответ был полезен?<span> <button class="yes">Да</button><button class="no">Нет</button></span></p>
+                                                </div>
+                                            </span></li>
+                                            <li class="links_accord"><span class="links_accordion">Зачем нужен режим самоконтроля</span></li>
+                                            <li class="links_accord"><span class="links_accordion">Как обновлять програмное обеспечение и уроки</span></li>
+                                        </ul>
+                                    </dd>
+                                    <dt class="accordion_zagolovok"><b>Уроки</b></dt>
+                                    <dd class="accordion_spisok">
+                                        <ul class="accord">
+                                            <li class="links_accord"><span class="links_accordion">Какой пароль и логин у администратора?</span></li>
+                                            <li class="links_accord"><span class="links_accordion">Как преподаватель может проверить выполнение навыка в процессе сдачи?
+                                                <div class="otvet">
+                                                    <p class="otvet_text">Для этого в интерфейсе преподавателя предусмотрен режим "Проверка", в котором он может
+                                                        <br> оценивать выполнение навыка курсанта в режиме онлайн/оффлайн,либо самостоятельно запустить
+                                                        <br> экзамен для курсанта,после чего автоматически появится чек-лист для оценки навыкаю</p>
+                                                    <p class="otvet_text2">Ответ был полезен?<span> <button class="yes">Да</button><button class="no">Нет</button></span></p>
+                                                </div>
+                                            </span></li>
+                                            <li class="links_accord"><span class="links_accordion">Зачем нужен режим самоконтроля</span></li>
+                                            <li class="links_accord"><span class="links_accordion">Как обновлять програмное обеспечение и уроки</span></li>
+                                        </ul>
+                                    </dd>
+                                    <dt class="accordion_zagolovok"><b>Администрированием</b></dt>
+                                    <dd class="accordion_spisok">
+                                        <ul class="accord">
+                                            <li class="links_accord"><span class="links_accordion">Какой пароль и логин у администратора?</span></li>
+                                            <li class="links_accord"><span class="links_accordion">Как преподаватель может проверить выполнение навыка в процессе сдачи?
+                                                <div class="otvet">
+                                                    <p class="otvet_text">Для этого в интерфейсе преподавателя предусмотрен режим "Проверка", в котором он может
+                                                        <br> оценивать выполнение навыка курсанта в режиме онлайн/оффлайн,либо самостоятельно запустить
+                                                        <br> экзамен для курсанта,после чего автоматически появится чек-лист для оценки навыкаю</p>
+                                                    <p class="otvet_text2">Ответ был полезен?<span> <button class="yes">Да</button><button class="no">Нет</button></span></p>
+                                                </div>
+                                            </span></li>
+                                            <li class="links_accord"><span class="links_accordion">Зачем нужен режим самоконтроля</span></li>
+                                            <li class="links_accord"><span class="links_accordion">Как обновлять програмное обеспечение и уроки</span></li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </main>
+        <script src="js/scripts.min.js"></script>
+        <script type="text/javascript" src="path/to/zebra_accordion.js"></script>
+    </body>
+</html>
